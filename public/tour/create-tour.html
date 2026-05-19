@@ -19,41 +19,41 @@
                 Thêm mới tour du lịch
             </h1>
 
-            <form class="tour-form">
+            <form class="tour-form" method="post" enctype="multipart/form-data" action="/add-tour">
 
                 <!-- Tên tour -->
                 <div class="form-group">
                     <label>Tên tour</label>
 
-                    <input type="text" placeholder="Nhập tên tour">
+                    <input type="text" name="name" placeholder="Nhập tên tour">
                 </div>
 
                 <!-- Địa điểm -->
                 <div class="form-group">
                     <label>Địa điểm</label>
 
-                    <input type="text" placeholder="Ví dụ: Đà Lạt">
+                    <input type="text" name="location" placeholder="Ví dụ: Đà Lạt">
                 </div>
 
                 <!-- Giá -->
                 <div class="form-group">
                     <label>Giá tour</label>
 
-                    <input type="number" placeholder="Nhập giá tour">
+                    <input type="number" name="price" placeholder="Nhập giá tour">
                 </div>
 
                 <!-- Số ngày -->
                 <div class="form-group">
                     <label>Số ngày</label>
 
-                    <input type="number" placeholder="Ví dụ: 3">
+                    <input type="number" name="days" placeholder="Ví dụ: 3">
                 </div>
 
                 <!-- Mô tả -->
                 <div class="form-group">
                     <label>Mô tả</label>
 
-                    <textarea rows="5" placeholder="Nhập mô tả tour du lịch"></textarea>
+                    <textarea name="description" rows="5"></textarea>
                 </div>
 
                 <!-- Upload ảnh -->
@@ -61,7 +61,7 @@
 
                     <label>Ảnh tour</label>
 
-                    <input type="file" id="tour-image" accept="image/*">
+                    <input type="file" id="tour-image" name="image" accept="image/*">
 
                 </div>
 
